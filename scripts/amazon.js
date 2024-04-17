@@ -71,6 +71,7 @@ document.querySelectorAll('.js-add-to-cart')
       });
 
       const quantitySelector = document.querySelector(`.js-quantity-selector-${product.id}`);
+      const quantity = quantitySelector.value;
 
       if (matchingItem) {
         matchingItem.quantity++;
